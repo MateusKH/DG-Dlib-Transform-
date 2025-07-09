@@ -28,6 +28,19 @@ Note: The lib is ready, but the plugin implementation is not finalized.
 
 Premium Support will be available soon.
 
+How does the plugin work?
+
+Like DG Mods Transform, DG Dlib Transform has an API application. When enabled, it creates a folder called jarjar, which initially contains the "dlib_integrated" file, which is responsible for integrating the lib.
+Set to true or false;
+
+If true, implementation occurs directly in the main mod, without generating dependencies, adding to the basic implementation of a composite mod.
+
+If false, implementation will be via dependency, requiring the lib's .jar file.
+
+It also generates a file required for implementation called "metadata." Only edit it if you know what you're doing.
+
+When exporting, the same "metadata" file will be copied to its proper location.
+
 ## Current Changelog
 
 ### v1.0
